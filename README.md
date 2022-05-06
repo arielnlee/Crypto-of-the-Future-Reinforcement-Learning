@@ -45,10 +45,13 @@ Common Steps
 1. Run this command: '$ git clone https://github.com/arielnlee/Crypto-of-the-Future-Reinforcement-Learning.git
 2. Run this command: cd Crypto-of-the-Future-Reinforcement-Learning
 3. [Install Python](https://www.python.org/downloads/)
+
 Approach 1: Using our CSV
+
 4. Run this command: python TradingETH.py
 
 Approach 2: Creating CSV Using custom made LSTM
+
 4. Uncomment Lines 111 and 112 in LSTM.py
 5. Run python LSTM.py
 6. Run python TradingETH.py
