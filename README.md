@@ -60,7 +60,9 @@ This project will implement a deep learning reinforcement algorithm — proximal
 [12] John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. 2017. Proximal Policy Optimization Algorithms. arXiv:1707.06347 [cs], August. arXiv: 1707.06347.
 
 References used as models for codes are:
+
 [9]: Used as a model for the baselines.
+
 [10]: Helped significantly with Tensorflow
 
 ## Contibutors
