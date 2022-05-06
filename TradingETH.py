@@ -223,6 +223,23 @@ if __name__=="__main__":
                   'data_preprocessed': False, 
                   'reward_strategy': 'omega_ratio',
                   'min_limit': 0.001}
+    data_pd = OHLC_binance(pair='ETH/USDT', starttime='2017-08-17T00:00:00',
+                           endtime='2021-02-27T00:00:00', interval='1h')
+    
+    # convert raw data to CSV file if needed
+    # filename = "ETH_Binance.csv"  
+    # data_pd.to_csv(filename, index=False)
+    
+    data_pd.reset_index()
+
+    # get rid of unnecessary features
+    data = data_pd.drop(axis=1, labels=['unix', 'close_unix', 'volume_from', 'marketorder_volume', 
+                                        'marketorder_volume_from', 'tradecount', 'date'])
+    
+    test_len = int(len(data) * 0.2)
+    train_len = int(len(data)) - test_len
+    train_df = data[:train_len]
+    test_df = data[train_len + 9:]
     
     # for google colab only
     # from google.colab import drive
