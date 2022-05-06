@@ -24,8 +24,6 @@ This project will implement a deep learning reinforcement algorithm — proximal
 * **gym-anytrading**: For the baseline agents
 * **stable_baselines** For the PPO policies and all other policies (including A2C)
 
-## Getting Started:
-
 ### Requires Git, Python 3.7–3.10, and pip >= 19.0
 
 1. Clone this repo: `$ https://github.com/arielnlee/Crypto-of-the-Future-Reinforcement-Learning.git`
