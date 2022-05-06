@@ -216,7 +216,7 @@ class TradingETH(gym.Env):
         
 if __name__=="__main__":
             
-    # start with $10,000, handling fee of 0.25% of each transaction amount, 12 hours of data per observation 
+    # start with $10,000, handling fee of 0.25% of each transaction amount, 0.001 minimum trading unit
     env_config = {'initial_cash': 10000,
                   'commission': 0.0025,
                   'forecast_len': 12,
