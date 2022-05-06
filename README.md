@@ -32,6 +32,27 @@ This project will implement a deep learning reinforcement algorithm — proximal
 4. Install Dependencies (P2): For trading environment: pip install tensorflow==1.15.0 stable-baselines gym-anytrading gym empyrical
 5. Start the Project Jupyter notebook: `$ jupyter notebook CryptoOfTheFuture/Project.ipynb`
 
+## Description of Files
+1. BinanceDataRequest.py: Extracts data from Binance API
+2. LSTM_Deprecated.py: Previous version of the LSTM which uses PyTorch instead of Tensorflow
+3. LSTM.py: Current version of the LSTM network using Tensorflow
+4. ETH_predictions.csv: The predictions that we got from our runthrough of the LSTM network.
+5. PPObaseline.py: The baseline models that we compare our custom model with.
+6. TradingETH.py:  The custom environment that our agent trades in.
+
+## How to Run (Two approaches)
+Common Steps
+1. Run this command: '$ git clone https://github.com/arielnlee/Crypto-of-the-Future-Reinforcement-Learning.git
+2. Run this command: cd Crypto-of-the-Future-Reinforcement-Learning
+3. [Install Python](https://www.python.org/downloads/)
+Approach 1: Using our CSV
+4. Run this command: python TradingETH.py
+
+Approach 2: Creating CSV Using custom made LSTM
+4. Uncomment Lines 111 and 112 in LSTM.py
+5. Run python LSTM.py
+6. Run python TradingETH.py
+
 ## References
 [1] Patrick Jaquart, David Dann, Christof Weinhardt. 2021. “Short-term bitcoin market prediction via machine learning”, Journal of Finance and Data Science. https://doi.org/10.1016/j.jfds.2021.03.001.
 
