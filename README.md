@@ -77,6 +77,12 @@ Approach 2: Creating CSV Using custom made LSTM
 
 [13] CryptoDataDownload. "How to Pull Binance Data for Any Specific Time Period Using Python." Cryptodatadownload.com. 16 Mar. 2022. Web. 6 May 2022.
 
+[14] Biondo, A.E., Pluchino, A., Rapisarda, A. and Helbing, D., 2013. Are random trading strategies more successful than technical ones?. PloS one, 8(7), p.e68344.
+
+[15] Brock, W., Lakonishok, J. and LeBaron, B., 1992. Simple technical trading rules and the stochastic properties of stock returns. The Journal of finance, 47(5), pp.1731-1764.
+
+
+
 References used as models for codes are:
 
 [9]: Used as a model for the baselines.
