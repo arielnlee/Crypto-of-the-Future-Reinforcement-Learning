@@ -45,6 +45,7 @@ Common Steps
 1. Run this command: '$ git clone https://github.com/arielnlee/Crypto-of-the-Future-Reinforcement-Learning.git
 2. Run this command: cd Crypto-of-the-Future-Reinforcement-Learning
 3. [Install Python](https://www.python.org/downloads/)
+4. Install all dependencies
 
 Approach 1: Using our CSV
 
