@@ -24,13 +24,6 @@ This project will implement a deep learning reinforcement algorithm — proximal
 * **gym-anytrading**: For the baseline agents
 * **stable_baselines** For the PPO policies and all other policies (including A2C)
 
-### Requires Git, Python 3.7–3.10, and pip >= 19.0
-
-1. Clone this repo: `$ https://github.com/arielnlee/Crypto-of-the-Future-Reinforcement-Learning.git`
-2. [Install Jupyter](https://jupyter.org/install)
-3. Install Dependencies (P1): For LSTM structure: `$ pip install -U matplotlib scikit-learn tensorflow`
-4. Install Dependencies (P2): For trading environment: pip install tensorflow==1.15.0 stable-baselines gym-anytrading gym empyrical
-5. Start the Project Jupyter notebook: `$ jupyter notebook CryptoOfTheFuture/Project.ipynb`
 
 ## Description of Files
 1. BinanceDataRequest.py: Extracts data from Binance API
