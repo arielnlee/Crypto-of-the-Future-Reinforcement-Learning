@@ -75,11 +75,15 @@ Approach 2: Creating CSV Using custom made LSTM
 
 [12] John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. 2017. Proximal Policy Optimization Algorithms. arXiv:1707.06347 [cs], August. arXiv: 1707.06347.
 
+[13] CryptoDataDownload. "How to Pull Binance Data for Any Specific Time Period Using Python." Cryptodatadownload.com. 16 Mar. 2022. Web. 6 May 2022.
+
 References used as models for codes are:
 
 [9]: Used as a model for the baselines.
 
 [10]: Helped significantly with Tensorflow
+
+[13]: Helped with extracting the data.
 
 ## Contibutors
 
