@@ -223,6 +223,7 @@ if __name__=="__main__":
                   'data_preprocessed': False, 
                   'reward_strategy': 'omega_ratio',
                   'min_limit': 0.001}
+    
     data_pd = OHLC_binance(pair='ETH/USDT', starttime='2017-08-17T00:00:00',
                            endtime='2021-02-27T00:00:00', interval='1h')
     
@@ -268,7 +269,7 @@ if __name__=="__main__":
         # PPO2 requires format obs, rewards, done, information
         obs, rewards, done, info = test_env.step(action)
         test_env.render()
-        rewards_sum += rewards
+        reward_sum += rewards
     
     # plot agent actions
     test_env.env_method('render_all')
