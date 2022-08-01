@@ -12,6 +12,10 @@ import numpy as np
 import math
 import pandas as pd
 import ssl
+import json
+import requests
+import time 
+from datetime import datetime, timezone
 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
@@ -117,7 +121,7 @@ if __name__=="__main__":
 
     # get rid of unnecessary features
     data = data_pd.drop(axis=1, labels=['unix', 'close_unix', 'volume_from', 'marketorder_volume', 
-                                        'marketorder_volume_from', 'tradecount', 'date'])
+                                        'marketorder_volume_from', 'tradecount'])
 
     data.head()
             
@@ -168,7 +172,7 @@ if __name__=="__main__":
     scaler = MinMaxScaler()
     y = scaler.fit_transform(np.array(y).reshape(-1, 1))
 
-    train_data, val_data, test_data = y[0:training_size, :]
+    train_data = y[0:training_size, :]
     val_data = y[training_size:val_end, :]
     test_data =  y[val_end:len(y), :]
     
